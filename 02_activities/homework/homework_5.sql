@@ -63,4 +63,15 @@ Finally, make sure you have a WHERE statement to update the right row,
 	you'll need to use product_units.product_id to refer to the correct row within the product_units table. 
 When you have all of these components, you can run the update statement. */
 
+ALTER TABLE product_units
+ADD current_quantity INT;
 
+UPDATE product_units
+SET current_quantity = vi.quantity - cp.quantity
+FROM vendor_inventory vi
+JOIN customer_purchases cp ON vi.product_id = cp.product_id
+WHERE product_units.product_id = vi.product_id;
+
+SELECT 
+*FROM product_units
+WHERE current_quantity IS NOT NULL;
