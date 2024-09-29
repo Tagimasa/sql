@@ -29,8 +29,9 @@ Review the AdventureWorks Schema [here](https://i.stack.imgur.com/LMu4W.gif)
 Highlight at least two differences between it and your ERD. Would you change anything in yours?
 ```
 Your answer...
-```1/ AdventureWorks Schema is very detailed comparing to my 
-   2/ it's production-oriented, my scheme is sales-oriented
+```
+1/ AdventureWorks Schema is very detailed comparing to my 
+2/ it's production-oriented, my scheme is sales-oriented
 
 # Criteria
 
